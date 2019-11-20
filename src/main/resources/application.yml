@@ -1,0 +1,19 @@
+#是以数据为中心的标记语言，xml配置大量的资源被浪费在开闭资源上
+#properties文件key-value,很难表达层次，更多使用yml与xml
+# "" : 不会转移特殊字符； '': 会转移最终为普通字符串 ；数组可以使用 - 表示或者 []
+
+ server:
+   port: 8888
+  #配置文件测试
+ parent:
+    name: 长辈
+    age: 32
+    date: 2019/11/11
+    args:
+      - 1
+      - 2
+      - 3
+    maps: {k1:v1,k2:v1}
+    childern:
+      name: 孩子
+      age: 12

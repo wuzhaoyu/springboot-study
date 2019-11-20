@@ -1,0 +1,6 @@
+springboot-start 场景启动器
+
+tomcat源码中对jsp的支持有2点要求：
+（1）jsp必须在WEB-INF目录下
+（2）运行的包必须是war包
+所以springboot生成jar，Tomcat是嵌入式，默认不支持jsp
