@@ -4,3 +4,7 @@ tomcat源码中对jsp的支持有2点要求：
 （1）jsp必须在WEB-INF目录下
 （2）运行的包必须是war包
 所以springboot生成jar，Tomcat是嵌入式，默认不支持jsp
+
+webMvcAutoConfiguration.java,例如：首页index.html及facion.icon图标
+静态资源自动配置类,默认静态资源文件就夹:
+classpath:/META-INF/resources/, classpath:/resources/, classpath:/static/, classpath:/public/
