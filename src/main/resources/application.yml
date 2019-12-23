@@ -7,8 +7,12 @@ server:
 spring:
   messages:
     basename: i18n.login
+  thymeleaf:
+    cache: false
+  mvc:
+    date-format: yyyy-MM-dd
 # 打印自动配置类是否启动日志
-debug: true
+#debug: true
 ---
 server:
   port: 8887

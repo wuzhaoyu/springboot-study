@@ -4,6 +4,7 @@ import com.wzy.dao.DepartmentDao;
 import com.wzy.dao.EmployeeDao;
 import com.wzy.entities.Department;
 import com.wzy.entities.Employee;
+import com.wzy.exception.UserNotExistException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -57,6 +58,9 @@ public class EmployeeController {
     //来到修改页面，查出当前员工，在页面回显
     @GetMapping("/emp/{id}")
     public String toEditPage(@PathVariable("id") Integer id,Model model){
+        if(id ==1){
+            throw new UserNotExistException();
+        }
         Employee employee = employeeDao.get(id);
         model.addAttribute("emp",employee);
 

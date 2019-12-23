@@ -25,10 +25,13 @@ public class LoginController {
             return "redirect:/main.html";
         }else{
             //登陆失败
-
             map.put("msg","用户名密码错误");
             return  "login";
         }
 
     }
+    @RequestMapping(value = "/login")
+    public String loginPage(){
+            return  "login";
+        }
 }

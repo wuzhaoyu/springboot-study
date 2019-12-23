@@ -8,3 +8,6 @@ tomcat源码中对jsp的支持有2点要求：
 webMvcAutoConfiguration.java,例如：首页index.html及facion.icon图标
 静态资源自动配置类,默认静态资源文件就夹:
 classpath:/META-INF/resources/, classpath:/resources/, classpath:/static/, classpath:/public/
+
+
+
